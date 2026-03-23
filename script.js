@@ -8,6 +8,16 @@ document.querySelectorAll('a[href^=\"#"]').forEach(anchor => {
   });
 });
 
+// CV Download Modal
+document.addEventListener('DOMContentLoaded', () => {
+  const cvButton = document.getElementById('cv-button');
+  if (cvButton) {
+    cvButton.addEventListener('click', () => {
+      window.open('https://drive.google.com/uc?export=download&id=1YjG_64dFP7pf_XWeYK8nfAdsSLFfTff_', '_blank');
+    });
+  }
+});
+
 // Navbar active highlight
 window.addEventListener('scroll', () => {
   let current = '';
