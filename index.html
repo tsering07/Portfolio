@@ -39,15 +39,15 @@
   <!-- Navbar -->
   <nav class="fixed top-0 w-full z-40 backdrop-blur-xl bg-white/5 border-b border-white/10 px-6 py-4">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition-all">TSERING PHURBU</a>
+<a href="#home" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent hover:scale-105 transition-all">TSERING PHURBU</a>
 <ul class="hidden md:flex space-x-6">
-        <li><a href="#home" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Home</a></li>
-        <li><a href="#about" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">About</a></li>
-        <li><a href="#skills" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Skills</a></li>
-        <li><a href="#certificates" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Certificates</a></li>
-        <li><a href="#projects" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Projects</a></li>
-        <li><a href="#experience" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Experience</a></li>
-        <li><a href="#contact" class="nav-link py-2 px-3 rounded-lg font-bold text-2xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Contact</a></li>
+        <li><a href="#home" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Home</a></li>
+        <li><a href="#about" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">About</a></li>
+        <li><a href="#skills" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Skills</a></li>
+        <li><a href="#certificates" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Certificates</a></li>
+        <li><a href="#projects" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Projects</a></li>
+        <li><a href="#experience" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Experience</a></li>
+        <li><a href="#contact" class="nav-link py-2 px-3 rounded-lg font-bold text-xl leading-tight hover:bg-white/10 transition-all ring-1 ring-transparent text-white tracking-wide shadow-lg">Contact</a></li>
       </ul>
       <button id="mobile-menu-btn" class="md:hidden text-2xl">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,21 +69,41 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden">
-    <div class="grid-bg absolute inset-0 opacity-10"></div>
+  <!-- Hero Section - Modern Split Layout -->
+  <section id="home" class="min-h-screen flex flex-col lg:flex-row items-center justify-center relative pt-32 px-6 lg:px-12 overflow-hidden max-w-7xl mx-auto">
+    <!-- Background Glow Effect -->
+    <div class="grid-bg absolute inset-0 opacity-10 z-0"></div>
     <div class="grid-bg absolute inset-0 opacity-10 animate-[gridMove_20s_linear_infinite]" style="animation-delay: -10s;"></div>
-    <div class="text-center z-10 max-w-4xl mx-auto px-6">
-        <div class="w-48 h-48 rounded-full mx-auto mb-8 shadow-2xl overflow-hidden">
-        <img src="a.jpeg" alt="Tsering Phurbu" class="w-full h-full object-cover rounded-full">
+    
+    <!-- Left: Text Content -->
+    <div class="lg:w-1/2 lg:pr-12 text-left lg:text-left z-10 mb-12 lg:mb-0">
+      <p class="text-slate-300 text-lg md:text-xl font-light mb-4 tracking-wide">Hello, I am</p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-slate-100 to-slate-200 bg-clip-text text-transparent drop-shadow-2xl">Tsering Phurbu</h1>
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-black mb-8 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent leading-tight animate-pulse">Software Developer</h2>
+
+</xai:function_call >
+
+  <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-md leading-relaxed">Passionate full-stack developer skilled in React, Laravel, Node.js. Building scalable web apps and solving complex problems with clean, efficient code.</p>
+      
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <!-- Primary Button: Download CV -->
+        <a href="https://drive.google.com/uc?export=download&id=1YjG_64dFP7pf_XWeYK8nfAdsSLFfTff_" class="group relative px-8 py-4 font-semibold text-lg bg-gradient-to-r from-purple-600 via-pink-600 to-purple-700 hover:from-purple-700 hover:via-pink-700 hover:to-purple-800 text-white rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-lg ring-2 ring-purple-500/30 hover:ring-purple-400/50" target="_blank" download>
+          <span>Download CV</span>
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-400 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl animate-ping -z-10"></div>
+        </a>
+        <!-- Secondary Button: View Work -->
+        <a href="#projects" class="px-8 py-4 font-semibold text-lg border-2 border-slate-300 hover:border-slate-200 text-slate-200 hover:text-white hover:bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-1 ring-1 ring-slate-300/50 hover:ring-slate-200/50 flex items-center justify-center">
+          View Work
+        </a>
       </div>
-      <h6 class="modern-heading text-5xl md:text-5xl font-mono mb-6 text-transparent">TSERING PHURBU</h6>
-      <p class="modern-text text-xl md:text-xl mb-5 font-mono">
-        Full Stack Developer | React • Laravel • Node.js | Building Scalable Web Apps
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-        <a href="#projects" class="btn-neon px-8 py-4 font-mono tracking-wider border-2 border-cyan-400 bg-cyan-400/10 hover:bg-cyan-400/20 backdrop-blur-sm rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,245,255,0.5)]">View Projects</a>
-        <a href="https://drive.google.com/uc?export=download&id=1YjG_64dFP7pf_XWeYK8nfAdsSLFfTff_" class="btn-neon px-8 py-4 font-mono tracking-wider border-2 border-purple-500 bg-purple-500/10 hover:bg-purple-500/20 backdrop-blur-sm rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.5)]" target="_blank" download>Download Resume</a>
+    </div>
+    
+    <!-- Right: Profile Image -->
+    <div class="lg:w-1/2 flex justify-center lg:justify-end">
+      <div class="relative group">
+        <img src="a.jpeg" alt="Tsering Phurbu - Profile" class="w-80 h-80 md:w-96 md:h-96 lg:w-96 lg:h-96 object-cover rounded-full shadow-2xl ring-4 ring-white/10 hover:ring-white/20 ring-offset-4 ring-offset-slate-900/50 transition-all duration-500 hover:scale-[1.02] shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+        <div class="absolute -inset-1 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur opacity-75 animate-pulse group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
       </div>
     </div>
   </section>
@@ -92,10 +112,12 @@
   <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
     <div class="grid-bg absolute inset-0 opacity-5 pointer-events-none"></div>
     <div class="relative z-10">
-      <h2 class="section-subhead text-3xl md:text-4xl mb-12 about-subhead bg-clip-text text-transparent flex items-center justify-center gap-4 mx-auto max-w-max">
+
+    <h2 class="section-subhead text-4xl md:text-5xl lg:text-5xl font-black mb-12 bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent drop-shadow-2xl flex items-center justify-center gap-4 mx-auto max-w-max">
         <span class="section-number">1️⃣</span>
         <span>About Me</span>
       </h2>
+
       <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-16 items-center">
         <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20">
           <p class="text-lg mb-6 leading-relaxed text-slate-300">Aspiring Full Stack Developer skilled in modern web technologies like React, Node.js, and Laravel. I enjoy building clean, scalable, and user-focused applications. Always learning and improving through real-world projects and challenges.</p>
@@ -103,19 +125,22 @@
         <div class="grid grid-cols-2 gap-4">
           <div class="text-center p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10">
             <div class="text-3xl mb-2">📚</div>
-            <h3 class="font-bold text-xl mb-1 text-cyan-400">Education</h3>
+            <h3 class="font-bold text-xl mb-1 text-blue-400">Education</h3>
             <p class="text-sm text-slate-400">LPU BTech CSE</p>
           </div>
           <div class="text-center p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10">
             <div class="text-3xl mb-2">💼</div>
-            <h3 class="font-bold text-xl mb-1 text-purple-400">Experience</h3>
+            <h3 class="font-bold text-xl mb-1 text-blue-400">Experience</h3>
             <p class="text-sm text-slate-400">Web Dev Intern</p>
           </div>
           <div class="text-center p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10">
+            <div class="text-3xl mb-2">🛠️</div>
+            <h3 class="font-bold text-xl mb-1 text-blue-400">Skills</h3>
+            <p class="text-sm text-slate-400">React, Laravel, Node.js</p>
           </div>
           <div class="text-center p-6 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10">
             <div class="text-3xl mb-2">🏆</div>
-            <h3 class="font-bold text-xl mb-1 text-orange-400">Achievements</h3>
+            <h3 class="font-bold text-xl mb-1 text-blue-400">Achievements</h3>
             <p class="text-sm text-slate-400">HackerRank</p>
           </div>
         </div>
@@ -126,14 +151,14 @@
   <!-- Skills Section -->
   <section id="skills" class="py-24 px-6 bg-white/5 backdrop-blur-sm">
     <div class="max-w-7xl mx-auto">
-      <h2 class="section-subhead text-3xl md:text-4xl mb-12 skills-subhead bg-clip-text text-transparent flex items-center justify-center gap-4 mx-auto max-w-max">
-        <span class="section-number">2️⃣</span>
+      <h2 class="section-subhead text-4xl md:text-5xl lg:text-5xl font-black mb-12 bg-gradient-to-r from-white via-slate-200 to-white bg-clip-text text-transparent drop-shadow-2xl flex items-center justify-center gap-4 mx-auto max-w-max">
+        <span class="section-number">2️⃣</span> 
         <span>Skills</span>
       </h2>
       <div class="grid md:grid-cols-4 gap-8">
         <!-- Languages -->
         <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20">
-          <h3 class="text-2xl font-bold mb-8 text-cyan-400 text-center">Languages</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Languages</h3>
           <div class="grid grid-cols-2 gap-4 text-center">
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">JavaScript</div>
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">Java</div>
@@ -146,7 +171,7 @@
         </div>
         <!-- Frameworks -->
         <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20">
-          <h3 class="text-2xl font-bold mb-8 text-purple-400 text-center">Frameworks</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Frameworks</h3>
           <div class="grid grid-cols-2 gap-4 text-center">
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">React</div>
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">Node.js</div>
@@ -156,7 +181,7 @@
         </div>
         <!-- Tools -->
         <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20">
-          <h3 class="text-2xl font-bold mb-8 text-green-400 text-center">Tools & DB</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Tools & DB</h3>
           <div class="grid grid-cols-2 gap-4 text-center">
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">MySQL</div>
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">MongoDB</div>
@@ -166,7 +191,7 @@
         </div>
         <!-- Soft Skills -->
         <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20">
-          <h3 class="text-2xl font-bold mb-8 text-yellow-400 text-center">Soft Skills</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Soft Skills</h3>
           <div class="grid grid-cols-2 gap-4 text-center">
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">Adaptability</div>
             <div class="p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">Time Management</div>
@@ -190,7 +215,7 @@
         <!-- Knowledge Management Portal -->
         <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-cyan-400/50 transition-all">
           <img src="k_hub.png" alt="Knowledge Management Portal" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
-          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Knowledge Management Portal</h3>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Knowledge Management Portal</h3>
           <p class="text-slate-300 mb-6 leading-relaxed">Full-stack knowledge management system with role-based access, real-time analytics dashboard, full-text search, and content moderation.</p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-white/10 rounded-full text-sm">React 18</span>
@@ -202,7 +227,7 @@
         <!-- Ticketing System -->
         <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-purple-400/50 transition-all">
           <img src="ticketing_system.png" alt="Ticketing System" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
-          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">Ticketing System</h3>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Ticketing System</h3>
           <p class="text-slate-300 mb-6 leading-relaxed">Full-stack ticketing application with user authentication, responsive dashboard, role-based access, and optimized workflow efficiency.</p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Laravel</span>
@@ -239,8 +264,8 @@
         <!-- Java OOP Certificate -->
         <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-cyan-400/50 transition-all">
           <img src="java.png" alt="Java OOP Certificate" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
-          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Java with OOP-Programming Language</h3>
-          <p class="text-slate-300 mb-6 leading-relaxed">CipherSchools | Certificate</p>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Java with OOP-Programming Language</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">CipherSchools | July, 2025</p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Certificate</span>
           </div>
@@ -248,8 +273,8 @@
         <!-- Front-End Certificate -->
         <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-purple-400/50 transition-all">
           <img src="lab.png" alt="Front-End Certificate" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
-          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">Front-End Development Program</h3>
-          <p class="text-slate-300 mb-6 leading-relaxed">Innomatics Research Labs | Certificate</p>
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Front-End Development Program</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">Innomatics Research Labs | Feb, 2025</p>
           <div class="flex flex-wrap gap-2 mb-6">
             <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Certificate</span>
           </div>
@@ -257,12 +282,44 @@
         <!-- DSA Certificate -->
         <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-blue-400/50 transition-all">
           <img src="dsa.png" alt="DSA Certificate" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
-          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Data Structures and Algorithm</h3>
-          <p class="text-slate-300 mb-6 leading-relaxed">iamneo | Certificate</p>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Data Structures and Algorithm</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">iamneo | Dec, 2024</p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Certificate</span>
+          </div>
+        </div>
+        <!-- Networking Certificate -->
+        <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-green-400/50 transition-all">
+          <img src="networking.png" alt="Networking Certificate" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Bits and Bytes of Computer Networking</h3>
+<p class="text-slate-300 mb-6 leading-relaxed">Coursera | Sep, 2024</p>
+<div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Certificate</span>
+          </div>
+        </div>
+        <!-- OS Certificate -->
+        <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-purple-400/50 transition-all">
+          <img src="os.png" alt="OS Certificate" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Introduction to Hardware and Operating Systems</h3>
+<p class="text-slate-300 mb-6 leading-relaxed">Coursera | Sep, 2024</p>
+<div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Certificate</span>
+          </div>
+        </div>
+        <!-- Hackathon Certificate -->
+        <div class="card-glow group p-8 rounded-2xl backdrop-blur-xl bg-gradient-to-b from-white/10 to-white/5 border border-white/20 hover:border-orange-400/50 transition-all">
+          <img src="hakathone.png" alt="Hackathon Certificate" class="h-48 w-full object-cover rounded-xl mb-6 group-hover:scale-110 transition-transform shadow-2xl">
+          <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Code-A-Haunt 24-Hour Hackathon</h3>
+          <p class="text-slate-300 mb-6 leading-relaxed">CodingBlocks LPU | Mar, 2024</p>
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="px-3 py-1 bg-white/10 rounded-full text-sm">Certificate</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
 
   <!-- Experience Section -->
   <section id="experience" class="py-32 px-6 max-w-6xl mx-auto min-h-screen flex items-center bg-white/5 backdrop-blur-sm">
@@ -305,21 +362,21 @@
     <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-16">
       <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 text-center">
         <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-2xl shadow-2xl">🎓</div>
-        <h3 class="text-2xl font-bold mb-4 text-blue-400">Lovely Professional University</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Lovely Professional University</h3>
         <p class="text-xl font-mono mb-2">BTech CSE</p>
         <p class="text-2xl font-bold text-green-400 mb-4">CGPA: 7.61</p>
         <p class="text-slate-400 text-sm">Phagwara, Punjab | Since Aug 2023</p>
       </div>
       <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 text-center">
         <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-2xl flex items-center justify-center text-2xl shadow-2xl">📖</div>
-        <h3 class="text-2xl font-bold mb-4 text-orange-400">Class 12</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Class 12</h3>
         <p class="text-xl font-mono mb-4">Tibetan Children's Village School, Selakui</p>
         <p class="text-2xl font-bold text-green-400">78%</p>
         <p class="text-slate-400 text-sm">Dehradun, Uttarakhand | 2021-2023</p>
       </div>
       <div class="card-glow p-8 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/20 text-center">
         <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center text-2xl shadow-2xl">📚</div>
-        <h3 class="text-2xl font-bold mb-4 text-indigo-400">Class 10</h3>
+<h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Class 10</h3>
         <p class="text-xl font-mono mb-4">Tibetan Children's Village School, Gopalpur</p>
         <p class="text-2xl font-bold text-green-400">83%</p>
         <p class="text-slate-400 text-sm">Kangra, Himachal Pradesh | 2020-2021</p>
@@ -355,7 +412,7 @@
                 <div class="w-12 h-12 bg-gradient-to-r from-gray-400 to-slate-400 rounded-xl flex items-center justify-center text-xl">💻</div>
                 <div>
                   <p class="font-mono">
-                    <a href="https://github.com/tsering07" class="text-cyan-400 hover:text-cyan-300 transition-colors">@tsering07</a>
+                    <a href="https://github.com/tsering07" class="text-white hover:text-cyan-300 transition-colors">@tsering07</a>
                   </p>
                 </div>
               </div>
@@ -363,7 +420,7 @@
                 <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center text-xl">💼</div>
                 <div>
                   <p class="font-mono">
-                    <a href="https://www.linkedin.com/in/tsering-phurbu" class="text-blue-400 hover:text-blue-300 transition-colors">linkedin.com/in/tsering-phurbu</a>
+                    <a href="https://www.linkedin.com/in/tsering-phurbu" class="text-white hover:text-blue-300 transition-colors">linkedin.com/in/tsering-phurbu</a>
                   </p>
                 </div>
               </div>
