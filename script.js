@@ -85,7 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.style.overflow = 'auto';
   document.getElementById('loading').classList.add('opacity-0', 'pointer-events-none');
 
-  // Contact form
+// Contact form - EmailJS integration (replace YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, YOUR_PUBLIC_KEY with actual values)
+// First, add EmailJS script to index.html: <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+// Then initialize: emailjs.init("YOUR_PUBLIC_KEY");
+
   const form = document.getElementById('contact-form');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -95,10 +98,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = document.getElementById('message').value.trim();
 
     if (name && email && message && /\S+@\S+\.\S+/.test(email)) {
-      alert('Thank you! Your message has been sent.');
+      // emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+      //   from_name: name,
+      //   from_email: email,
+      //   message: message,
+      // }).then(() => {
+      //   alert('Thank you! Your message has been sent to tseringphurbu378@gmail.com');
+      //   form.reset();
+      // }, (error) => {
+      //   alert('Failed to send message. Please try again or email directly: tseringphurbu378@gmail.com');
+      //   console.error('EmailJS error:', error);
+      // });
+      alert('EmailJS configured - messages will be sent to tseringphurbu378@gmail.com (uncomment code after setup)');
       form.reset();
     } else {
       alert('Please fill all fields correctly.');
     }
   });
+
 });

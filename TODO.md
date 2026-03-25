@@ -1,10 +1,26 @@
-# TODO: Make Certificate Grid Bigger
+# TODO List
 
-## Approved Plan Steps:
-- [ ] Step 1: Edit index.html - Update certificate grid classes, standardize card padding to p-6, change image heights to h-48, update grid columns to grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5, gap-6.
-- [ ] Step 2: Edit style.css - Add .cert-grid styles for max-width and margins, ensure hover compatibility.
-- [ ] Step 3: Test changes - Refresh page, verify responsive sizing and hovers on #certificates section.
-- [ ] Step 4: Complete task.
+## Contact Form Integration
+- [x] Update script.js to send form data to tseringphurbu378@gmail.com using EmailJS or similar service
+- [ ] Step 1: Sign up for EmailJS (free), get service ID, template ID
+- [ ] Step 2: Add EmailJS script to index.html head
+- [ ] Step 3: Update contact form handler in script.js with EmailJS send
+- [ ] Step 4: Test form submission
 
-Current progress: Starting Step 1.
+## Previous Tasks
+### Certificates Styling (Completed)
+- [x] Edit index.html certificate grid
+- [x] Responsive grid, larger images, standardized padding
+- [x] Test responsiveness
+
+### Experience Styling (Pending)
+**Information Gathered:** Single experience card with purple/pink theme, ready for enhancement.
+**Plan:** 
+- Update to green/teal gradients for distinction
+- Larger icon, animated bullets, enhanced hovers
+- Future-ready for timeline/grid
+**Dependent Files:** index.html, style.css
+**Followup:** Update TODO, test hovers/responsiveness
+
+Current progress: Contact form update first, then Experience styling.
 
