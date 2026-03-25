@@ -1,14 +1,10 @@
-# Task Progress: Premium Hero Section Redesign & Navbar Updates + Section Heading Colors
+# TODO: Make Certificate Grid Bigger
 
-## Pending Steps
-- [x] Create premium Tailwind hero landing page in index.html
-- [x] Update navbar links to match hero heading style (bold, uniform white text color, consistent sizing)
-- [ ] Stage changes: git add index.html script.js
-- [ ] Commit: feat(hero): premium Tailwind redesign with heading-style navbar
-- [ ] Push: git push
-- [ ] Install GitHub CLI (winget or download)
-- [ ] gh pr create --fill --base main
-- [x] Set section headings 1️⃣-7️⃣ and Get In Touch to uniform white text color
+## Approved Plan Steps:
+- [ ] Step 1: Edit index.html - Update certificate grid classes, standardize card padding to p-6, change image heights to h-48, update grid columns to grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5, gap-6.
+- [ ] Step 2: Edit style.css - Add .cert-grid styles for max-width and margins, ensure hover compatibility.
+- [ ] Step 3: Test changes - Refresh page, verify responsive sizing and hovers on #certificates section.
+- [ ] Step 4: Complete task.
 
-## Completed Steps
+Current progress: Starting Step 1.
 

@@ -53,6 +53,29 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
+// Certificate stagger animation
+const certObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      const certCards = document.querySelectorAll('.cert-card');
+      certCards.forEach((card, i) => {
+        setTimeout(() => {
+          card.style.animationDelay = `${i * 0.1}s`;
+          card.classList.add('animate-staggerFadeIn');
+        }, i * 50);
+      });
+      certObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelector('#certificates')?.addEventListener('mouseenter', () => {
+  const certCards = document.querySelectorAll('.cert-card');
+  certCards.forEach((card, i) => {
+    card.style.animationDelay = `${i * 0.1}s`;
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
